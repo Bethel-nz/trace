@@ -27,8 +27,8 @@ Trace is an AI-powered coding assistant that lives in your terminal. It uses a T
    PROVIDER_AUTH_TOKEN=your_auth_token_here # if your provider requires it
    ```
 
-   # side note: you can get a model on groq for free, 1k free request which should be enough for most use cases
-
+   ## side note: you can get a model on groq for free, 1k free request which should be enough for most use cases
+   ## double side note you really need to set your env key name as provider
 _(Note: The system supports OpenAI-compatible APIs)_
 
 3. **Running**:
