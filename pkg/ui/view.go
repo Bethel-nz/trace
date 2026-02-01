@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"agent/pkg/agent"
+	"github.com/bethel-nz/trace/pkg/agent"
 
 	"github.com/charmbracelet/glamour"
 	"github.com/charmbracelet/lipgloss"

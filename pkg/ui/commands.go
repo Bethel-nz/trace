@@ -10,7 +10,7 @@ import (
 	"os"
 	"os/exec"
 
-	"agent/pkg/agent"
+	"github.com/bethel-nz/trace/pkg/agent"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/sashabaranov/go-openai"
@@ -88,10 +88,10 @@ type AiResponseMsg struct {
 
 func (m Model) InvokeAI() tea.Cmd {
 	return func() tea.Msg {
-		modelName := os.Getenv("PROVIDER_MODEL")
+		modelName := os.Getenv("ANTHROPIC_MODEL")
 		if modelName == "" {
-			slog.Error("PROVIDER_MODEL not set")
-			return ErrMsg(errors.New("PROVIDER_MODEL not set in .env"))
+			slog.Error("ANTHROPIC_MODEL not set")
+			return ErrMsg(errors.New("ANTHROPIC_MODEL not set in .env"))
 		}
 
 		// Copy history for the loop

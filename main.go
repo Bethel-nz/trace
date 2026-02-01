@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"agent/pkg/ui"
+	"github.com/bethel-nz/trace/pkg/ui"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
